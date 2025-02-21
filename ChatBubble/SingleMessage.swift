@@ -24,8 +24,23 @@ class SingleMessage: UICollectionViewCell{
         addSubview(bubbleView)
         
         messageLabel.numberOfLines = 0
+        messageLabel.lineBreakMode = .byWordWrapping
         messageLabel.font = UIFont.systemFont(ofSize: 16)
         bubbleView.addSubview(messageLabel)
+        
+        bubbleView.translatesAutoresizingMaskIntoConstraints = false
+        messageLabel.translatesAutoresizingMaskIntoConstraints = false
+               
+        NSLayoutConstraint.activate([
+            bubbleView.topAnchor.constraint(equalTo: topAnchor, constant: 5),
+            bubbleView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5),
+            bubbleView.widthAnchor.constraint(lessThanOrEqualToConstant: 250),
+                   
+            messageLabel.topAnchor.constraint(equalTo: bubbleView.topAnchor, constant: 10),
+            messageLabel.bottomAnchor.constraint(equalTo: bubbleView.bottomAnchor, constant: -10),
+            messageLabel.leadingAnchor.constraint(equalTo: bubbleView.leadingAnchor, constant: 10),
+            messageLabel.trailingAnchor.constraint(equalTo: bubbleView.trailingAnchor, constant: -10),
+        ])
         
     }
     
@@ -33,13 +48,22 @@ class SingleMessage: UICollectionViewCell{
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(with message: Message){
-        messageLabel.text = message.text
-        bubbleView.backgroundColor = message.incoming ? .lightGray : .blue
-        messageLabel.textColor = message.incoming ? .black : .white
-        
-        bubbleView.frame = CGRect(x: message.incoming ? 10 : frame.width - 210, y: 5, width: 200, height: frame.height - 10)
-        messageLabel.frame = CGRect(x: 10, y: 5, width: 180, height: bubbleView.frame.height - 10)
-        
-    }
+    func configure(with message: Message) {
+           messageLabel.text = message.text
+           bubbleView.backgroundColor = message.incoming ? .lightGray : .blue
+           messageLabel.textColor = message.incoming ? .black : .white
+           
+           if message.incoming {
+               bubbleView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10).isActive = true
+               bubbleView.trailingAnchor.constraint(lessThanOrEqualTo: trailingAnchor, constant: -60).isActive = true
+           } else {
+               bubbleView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10).isActive = true
+               bubbleView.leadingAnchor.constraint(greaterThanOrEqualTo: leadingAnchor, constant: 60).isActive = true
+           }
+       }
 }
+
+#Preview {
+    UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
+}
+
