@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AjoChatView
 
 class ViewController: UIViewController {
     var collectionView: AjoChatView!
@@ -26,6 +27,7 @@ class ViewController: UIViewController {
         collectionView = AjoChatView(frame: view.bounds)
         collectionView.messages = messages
         view.addSubview(collectionView)
+
     }
     
 }

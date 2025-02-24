@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		648F12892D6C6AEE001D5048 /* AjoChatView in Frameworks */ = {isa = PBXBuildFile; productRef = 648F12882D6C6AEE001D5048 /* AjoChatView */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		64DCE41B2D6750FD006BBA4A /* ChatBubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBubble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				648F12892D6C6AEE001D5048 /* AjoChatView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = ChatBubble;
 			packageProductDependencies = (
+				648F12882D6C6AEE001D5048 /* AjoChatView */,
 			);
 			productName = ChatBubble;
 			productReference = 64DCE41B2D6750FD006BBA4A /* ChatBubble.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = 64DCE4122D6750FC006BBA4A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				648F12872D6C6AEE001D5048 /* XCRemoteSwiftPackageReference "AjoChatView" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 64DCE41C2D6750FD006BBA4A /* Products */;
 			projectDirPath = "";
@@ -349,6 +358,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		648F12872D6C6AEE001D5048 /* XCRemoteSwiftPackageReference "AjoChatView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devpenzil/AjoChatView";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		648F12882D6C6AEE001D5048 /* AjoChatView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 648F12872D6C6AEE001D5048 /* XCRemoteSwiftPackageReference "AjoChatView" */;
+			productName = AjoChatView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 64DCE4132D6750FC006BBA4A /* Project object */;
 }

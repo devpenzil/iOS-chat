@@ -1,0 +1,15 @@
+{
+  "originHash" : "2d706782445742e2d96fc121de48cdf96898e72d9500fb2def1cadbdc0c383c4",
+  "pins" : [
+    {
+      "identity" : "ajochatview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/devpenzil/AjoChatView",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9b4b2210e7eb21fb5323ec1e7571f99be6d33b4a"
+      }
+    }
+  ],
+  "version" : 3
+}
