@@ -6,34 +6,43 @@
 //
 
 import UIKit
-import AjoChatView
+import ChatViewPOC
 
 class ViewController: UIViewController {
-    var collectionView: AjoChatView!
-    var messages: [Message] = [
-        Message(text: "Hey!", incoming:  true),
-        Message(text: "Hi! How are you?", incoming: false),
-        Message(text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", incoming:  true),
-        Message(text: "Hi!", incoming: false),
-    ]
-    var isTyping: Bool = true
+    var collectionView: ChatViewPOC!
+    var isTyping: Bool = false
     let theme = chatUiTheme(
         sentMessageCellColor: UIColor.cyan, sentMessageTextColor: UIColor.red, receiveMessageCellColor: UIColor.green, receiveMessageTextColor: UIColor.purple
     )
-   
+    
     override func viewDidLoad() {
         title = "Chat"
         setupCollectionView()
         super.viewDidLoad()
     }
-    
+
     func setupCollectionView(){
-        collectionView = AjoChatView(frame: view.bounds, theme: theme)
-        collectionView.messages = messages
+        collectionView = ChatViewPOC(frame: view.bounds, theme: theme)
         collectionView.isTyping = isTyping
+        
+        collectionView.addSenderMessage(content: "Lorem Ipsum ire recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")
+        collectionView.addRecieverMessage(content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ets containing Lorem Ipsum passages, and more recently  Ipsum.")
+        collectionView.addSenderMessage(content: "djhsdhj ")
+        collectionView.addSenderMessage(content: "djhsdhj")
+        collectionView.addSenderMessage(content: "djhsd jsdhbfs sdjhfbds jhsdbxhj")
+        collectionView.addRecieverMessage(content: "zdcsd")
+        collectionView.addSenderMessage(content: "djhsd jsdhbfs sdjhfbds jhsdbxhj")
+        collectionView.addSenderMessage(content: "djhsd jsdhbfs sdjhfbds jhsdbxhj")
+        collectionView.addRecieverMessage(content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has PageMaker including versions of Lorem Ipsum.")
+        collectionView.addSenderMessage(content: "Lorem Ipsum ire recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")
+        collectionView.addRecieverMessage(content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ets containing Lorem Ipsum passages, and more recently  Ipsum.")
+        collectionView.addSenderMessage(content: "Lorem Ipsum ire recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")
+        collectionView.addRecieverMessage(content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ets containing Lorem Ipsum passages, and more recently  Ipsum.")
+        collectionView.addSenderMessage(content: "djhsdhj skdjnf sjdnfs sdjfsdjfsdkjfksdjfndsjk sjkdfnsjkfnas aksjnasd ajsdnsanj ajskdnasd akjdnansd askjdnasd asjwoiejhruwy ahsbdakjn")
+        collectionView.addRecieverMessage(content: "Hello world")
+        collectionView.addSenderMessage(content: "Helloooooo")
         view.addSubview(collectionView)
     }
-    
 }
 
 

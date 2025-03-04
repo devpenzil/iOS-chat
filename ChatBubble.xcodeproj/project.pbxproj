@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6455FC0A2D7595960009CCA0 /* AjoChatView in Frameworks */ = {isa = PBXBuildFile; productRef = 6455FC092D7595960009CCA0 /* AjoChatView */; };
-		6455FC0D2D7595D00009CCA0 /* AjoChatView in Frameworks */ = {isa = PBXBuildFile; productRef = 6455FC0C2D7595D00009CCA0 /* AjoChatView */; };
-		6455FC0F2D7595F30009CCA0 /* AjoChatView in Frameworks */ = {isa = PBXBuildFile; productRef = 6455FC0E2D7595F30009CCA0 /* AjoChatView */; };
-		64D523542D75A54C0066D69E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 64D523532D75A54C0066D69E /* Kingfisher */; };
+		64D523DA2D76F2830066D69E /* ChatViewPOC in Frameworks */ = {isa = PBXBuildFile; productRef = 64D523D92D76F2830066D69E /* ChatViewPOC */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,10 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64D523542D75A54C0066D69E /* Kingfisher in Frameworks */,
-				6455FC0D2D7595D00009CCA0 /* AjoChatView in Frameworks */,
-				6455FC0F2D7595F30009CCA0 /* AjoChatView in Frameworks */,
-				6455FC0A2D7595960009CCA0 /* AjoChatView in Frameworks */,
+				64D523DA2D76F2830066D69E /* ChatViewPOC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,10 +83,7 @@
 			);
 			name = ChatBubble;
 			packageProductDependencies = (
-				6455FC092D7595960009CCA0 /* AjoChatView */,
-				6455FC0C2D7595D00009CCA0 /* AjoChatView */,
-				6455FC0E2D7595F30009CCA0 /* AjoChatView */,
-				64D523532D75A54C0066D69E /* Kingfisher */,
+				64D523D92D76F2830066D69E /* ChatViewPOC */,
 			);
 			productName = ChatBubble;
 			productReference = 64DCE41B2D6750FD006BBA4A /* ChatBubble.app */;
@@ -123,8 +114,7 @@
 			mainGroup = 64DCE4122D6750FC006BBA4A;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				6455FC0B2D7595D00009CCA0 /* XCLocalSwiftPackageReference "../AjoChatView" */,
-				64D523522D75A54C0066D69E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				64D523D82D76F2830066D69E /* XCLocalSwiftPackageReference "../ChatViewPOC" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 64DCE41C2D6750FD006BBA4A /* Products */;
@@ -370,40 +360,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		6455FC0B2D7595D00009CCA0 /* XCLocalSwiftPackageReference "../AjoChatView" */ = {
+		64D523D82D76F2830066D69E /* XCLocalSwiftPackageReference "../ChatViewPOC" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = ../AjoChatView;
+			relativePath = ../ChatViewPOC;
 		};
 /* End XCLocalSwiftPackageReference section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		64D523522D75A54C0066D69E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.2.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		6455FC092D7595960009CCA0 /* AjoChatView */ = {
+		64D523D92D76F2830066D69E /* ChatViewPOC */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = AjoChatView;
-		};
-		6455FC0C2D7595D00009CCA0 /* AjoChatView */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = AjoChatView;
-		};
-		6455FC0E2D7595F30009CCA0 /* AjoChatView */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = AjoChatView;
-		};
-		64D523532D75A54C0066D69E /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 64D523522D75A54C0066D69E /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
+			productName = ChatViewPOC;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
