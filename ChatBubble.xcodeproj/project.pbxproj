@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64D523DA2D76F2830066D69E /* ChatViewPOC in Frameworks */ = {isa = PBXBuildFile; productRef = 64D523D92D76F2830066D69E /* ChatViewPOC */; };
+		64D5241B2D781B660066D69E /* ChatViewPOC in Frameworks */ = {isa = PBXBuildFile; productRef = 64D5241A2D781B660066D69E /* ChatViewPOC */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64D523DA2D76F2830066D69E /* ChatViewPOC in Frameworks */,
+				64D5241B2D781B660066D69E /* ChatViewPOC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 			);
 			name = ChatBubble;
 			packageProductDependencies = (
-				64D523D92D76F2830066D69E /* ChatViewPOC */,
+				64D5241A2D781B660066D69E /* ChatViewPOC */,
 			);
 			productName = ChatBubble;
 			productReference = 64DCE41B2D6750FD006BBA4A /* ChatBubble.app */;
@@ -114,7 +114,7 @@
 			mainGroup = 64DCE4122D6750FC006BBA4A;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				64D523D82D76F2830066D69E /* XCLocalSwiftPackageReference "../ChatViewPOC" */,
+				64D524192D781B660066D69E /* XCLocalSwiftPackageReference "../ChatViewPOC" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 64DCE41C2D6750FD006BBA4A /* Products */;
@@ -360,14 +360,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		64D523D82D76F2830066D69E /* XCLocalSwiftPackageReference "../ChatViewPOC" */ = {
+		64D524192D781B660066D69E /* XCLocalSwiftPackageReference "../ChatViewPOC" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../ChatViewPOC;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		64D523D92D76F2830066D69E /* ChatViewPOC */ = {
+		64D5241A2D781B660066D69E /* ChatViewPOC */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ChatViewPOC;
 		};

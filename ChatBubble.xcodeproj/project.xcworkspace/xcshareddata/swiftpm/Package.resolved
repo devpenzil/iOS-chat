@@ -1,0 +1,15 @@
+{
+  "originHash" : "60e5a01e7396572e4d61e5a9ad9e35f28242d9dea9299467f6acb076441aee58",
+  "pins" : [
+    {
+      "identity" : "swiftygif",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kirualex/SwiftyGif.git",
+      "state" : {
+        "revision" : "4430cbc148baa3907651d40562d96325426f409a",
+        "version" : "5.4.5"
+      }
+    }
+  ],
+  "version" : 3
+}
