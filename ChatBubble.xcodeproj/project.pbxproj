@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		64DCE42D2D675101006BBA4A /* Exceptions for "ChatBubble" folder in "ChatBubble" target */ = {
+		64DCE42D2D675101006BBA4A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -25,14 +25,7 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		64DCE41D2D6750FD006BBA4A /* ChatBubble */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				64DCE42D2D675101006BBA4A /* Exceptions for "ChatBubble" folder in "ChatBubble" target */,
-			);
-			path = ChatBubble;
-			sourceTree = "<group>";
-		};
+		64DCE41D2D6750FD006BBA4A /* ChatBubble */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (64DCE42D2D675101006BBA4A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ChatBubble; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +98,7 @@
 				};
 			};
 			buildConfigurationList = 64DCE4162D6750FC006BBA4A /* Build configuration list for PBXProject "ChatBubble" */;
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -116,7 +110,6 @@
 			packageReferences = (
 				64D524192D781B660066D69E /* XCLocalSwiftPackageReference "../ChatViewPOC" */,
 			);
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 64DCE41C2D6750FD006BBA4A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
